@@ -6,6 +6,10 @@
 
   mse = ((y实际值 - y预测值）** 2）/n
   
+   tf.losses.mean_squared_error(y - prediction)
+   
+   tf.reduce_mean(tf.square(y - prediction))
+   
 ## 二次代价函数
 
   C = sum(||y - a||**2)/(2 * n)
@@ -13,6 +17,8 @@
   C表示代价， y表示样本，a表示输出值，n表示样本的个数
   
   * 个人理解：均方误差与二次代价函数本质上是一致的，二次代价函数在求导时可以消去分母上的2，使导数是多项式形式并且最高项系数为1，有利于下一步激活函数的计算
+  
+  tf.reduce_mean(tf.square(y - prediction))
  
 ## 交叉熵代价函数
 
