@@ -25,3 +25,40 @@
 
 - train loss 不断上升，test loss不断上升，说明网络结构设计不当，训练超参数设置不当，数据集经过清洗等问题。（最不好的情况）
 
+## Tensorflow中不同优化器说明
+
+  标准梯度下降法：先计算所有样本汇总误差，然后根据总误差来更新权值。tensorflow这里提供的tf.train.GradientDescentOptimizer相当于是SGD。
+  
+  tf.train.GradientDescentOptimizer
+  
+  自适应矩估计
+  
+  tf.train.AdamOptimizer
+  
+  动量优化器
+  
+  tf.train.MomentumOptimizer
+  
+  均方根优化器
+  
+  tf.train.RMSPropOptimizer
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
