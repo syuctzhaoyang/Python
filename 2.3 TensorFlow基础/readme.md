@@ -30,4 +30,15 @@ Tensorflow 中是先建好图在决定资料的输入与输出，Placeholder在�
 ## 7-2递归神经网络RNN.py
 
   - 利用tensorflow 1.15 编写的递归神经网络RNN完成MNIST数据集的分类
- 
+
+## 8-1训练和保存RNN模型.py
+
+  - saver = tf.train.Saver()    对象实例化一个保存模型的对象
+  - saver.save(sess,'net/my_net.ckpt') 调用save方法保存训练好的模型数据
+  
+## 8-2调用训练好的RNN模型.py
+
+  - saver = tf.train.Saver()    对象实例化一个保存模型的对象
+  - saver.restore(sess,'net/my_net.ckpt') 从文件中反向序列化到sess对象中
+  - acc = sess.run(accuacy, feed_dict={x: mnist.test.images, y: mnist.test.labels}) 调用模型预测测试集结果
+   
