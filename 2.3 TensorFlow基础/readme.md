@@ -42,3 +42,4 @@ Tensorflow 中是先建好图在决定资料的输入与输出，Placeholder在�
   - saver.restore(sess,'net/my_net.ckpt') 从文件中反向序列化到sess对象中
   - acc = sess.run(accuacy, feed_dict={x: mnist.test.images, y: mnist.test.labels}) 调用模型预测测试集结果
    
+## 牛津大学图片数据集   http://www.robots.ox.ac.uk/~vgg/data/
