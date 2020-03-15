@@ -43,3 +43,31 @@ Tensorflow 中是先建好图在决定资料的输入与输出，Placeholder在�
   - acc = sess.run(accuacy, feed_dict={x: mnist.test.images, y: mnist.test.labels}) 调用模型预测测试集结果
    
 ## 牛津大学图片数据集   http://www.robots.ox.ac.uk/~vgg/data/
+
+
+## 构造CNN用到的基本TensorFlow函数
+
+### 输入与参数
+
+     tf.placeholder               tf.Variable
+
+### 初始化方法
+
+     tf.random_normal
+
+### CNN基本函数
+
+    tf.nn.conv2d -----------2d 卷积层
+    tf.nn.relu -----------relu激活函数
+    tf.nn.max_pool -----------最大值池化层
+    tf.nn.reshape -----------调整张量维度
+    tf.nn.matul -----------矩阵乘法
+    tf.nn.dropout -----------dropout层
+    
+### 训练相关函数
+
+    tf.nn.softmax_cross_entropy_with_Logits----交叉熵损失函数
+    tf.train.AdaOptimizer---------------------Adam优化器
+    tf.reduce_mean----------------------------计算张量指定中方向的均值
+    
+    
