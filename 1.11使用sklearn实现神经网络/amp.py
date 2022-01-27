@@ -13,7 +13,7 @@ digits = sklearn.datasets.load_digits()
 #     ax = fig.add_subplot(6,6,i+1,xticks = [],yticks = [])
 #     ax.imshow(digits.images[i],cmap=plt.cm.binary,interpolation='nearest')
 #     ax.text(0,7,str(digits.target[i]),color="red", fontsize = 20)
-# fig.show()
+# plt.show()
 
 scaler = sklearn.preprocessing.StandardScaler()
 scaler.fit(digits.data)               ##设置归一化模板
