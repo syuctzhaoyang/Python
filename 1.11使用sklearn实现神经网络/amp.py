@@ -34,7 +34,7 @@ predicted = mlp.predict(X_scaled)
 #     ax = fig.add_subplot(6,6,i+1,xticks = [],yticks = [])
 #     ax.imshow(digits.images[i],cmap=plt.cm.binary,interpolation='nearest')
 #     ax.text(0,7,str('{}-{}'.format(digits.target[i],predicted[i])),color="red", fontsize = 20)
-# fig.show()
+# plt.show()
 
 import sklearn.metrics
 
