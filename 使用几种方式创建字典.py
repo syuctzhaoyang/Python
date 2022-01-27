@@ -10,3 +10,7 @@ d = dict([('two',2),('one',1),('three',3)])
 e = dict({'three':3,'one':1,'two':2})
 f = {'three':3,'one':1,'two':2}
 print(a == b == c == d == e ==f)
+g = {}
+g['hello'] = 1
+g['world'] = 2
+print(dic)
